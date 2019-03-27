@@ -9,21 +9,19 @@ package triangulo;
  *
  * @author 20161014040004
  */
-public class Fibo {
+public abstract class Fibo {
     static long fibo(int n) {
-        int F = 0;     // atual
-        int ant = 0;   // anterior
-  
-        for (int i = 1; i <= n; i++) {
-  
-            if (i == 1) {
-                F = 1;
-                ant = 0;
-            } else {
+        int F = 1;     // atual
+        int ant = 1;   // anterior
+        
+        for (int i = 1; i <= n; i++) {  
+            if (i > 2) {
+                int aux = F;
                 F += ant;
-                ant = F - ant;
+                ant = aux;
             }
-  
+            if(i < n)
+                System.out.println(F);  
         }
   
         return F;

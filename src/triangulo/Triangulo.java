@@ -74,19 +74,19 @@ public class Triangulo {
         // TODO code application logic here
         Scanner s = new Scanner(System.in);
         
-                
-        while(true){
-            System.out.print("LADOS DO TRIÂNGULO: ");
-            int x,y,z;
-            
-            x = (int)(Math.random()*10)% 5;
-            y = (int)(Math.random()*10)% 5;
-            z = (int)(Math.random()*10)% 5;
-            System.out.println(x + ", " + y + ", " + z);
-            Triangulo t = new Triangulo(x, y, z);
-            System.out.println("É triângulo? " + t.ÉTriangulo());
-            Thread.sleep(1000);
-        }
+          System.out.println(Fibo.fibo(2));
+//        while(true){
+//            System.out.print("LADOS DO TRIÂNGULO: ");
+//            int x,y,z;
+//            
+//            x = (int)(Math.random()*10)% 5;
+//            y = (int)(Math.random()*10)% 5;
+//            z = (int)(Math.random()*10)% 5;
+//            System.out.println(x + ", " + y + ", " + z);
+//            Triangulo t = new Triangulo(x, y, z);
+//            System.out.println("É triângulo? " + t.ÉTriangulo());
+//            Thread.sleep(1000);
+//        }
         
     }
     
